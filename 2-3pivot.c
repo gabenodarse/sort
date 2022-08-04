@@ -1,3 +1,6 @@
+// Gabe Nodarse
+// SEE 1-2pivot.c for an explanation of the code
+
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,8 +8,6 @@
 #include "quicksort.h"
 
 #define ARRAY_SIZE 1048576
-
-// SEE 1-2pivot.c for an explanation of the code
 
 struct partition{
 	int initValIdx;
