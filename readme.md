@@ -11,10 +11,10 @@ Here are the benchmarks on my machine.
 |2^24|13.300|8.940|7.529|
 |2^26|189.04|51.950|41.997|
 
-### Observations
+### OBSERVATIONS
 The benchmarks evidence that 2-3 pivot sort has a significantly lower coefficient for the linearithmic scaling "nlog(n)" term than quicksort, but also a significantly larger overhead coefficient for the linear scaling "n" term than quicksort. The results are not adjusted for cache miss rates or pipelineability or any other processor tricks.
 
-### How it works
+### HOW IT WORKS
 
 Let's preface the explanation by saying that quicksort on random values is a very fast algorithm. It only falters because pivots don't always happen to be near the center. Consider that half the time the choice of pivot will either fall below 25% of elements or above 75% of elements, resulting in imbalanced partitions. Choosing a median of 3 or 9 or whatever does not help with this problem (a median of 3 is statistically as likely to result in a bad median if the array is large). What would help would be the medians of medians algorithm used in conjunction with quick sort, but that is a sufficiently complicated algorithm that the overhead would be very high.
 
