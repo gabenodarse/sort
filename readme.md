@@ -32,4 +32,4 @@ Partitions are implemented as linked lists, allowing for them to be appended to 
 
 A fun observation is that promoting more pivot swaps speeds up the algorithm. This is despite swapping pivots being a high overhead operation and despite displaced elements have to go through redundant comparisons. Pivot swaps are promoted by resetting the partition estimated sizes after each swap of pivot, so it is easier for a partition to accumulate the threshold amount of elements for a pivot change.
 
-For very large arrays, it is recommended to find a second processor and parallelize merge sort over actually using 1-2 pivot sort.
+There is further, more detailed explanation within the code for 1-2 pivot sort.
