@@ -26,7 +26,7 @@ The heart of 1-2 pivot sort is what happens when partition sizes are imbalanced.
 
 Adding/removing pivots poses an obvious problem: what happens to elements that were sorted before a change of pivot? The solution is soft partitions. Soft partitions store elements which don't have complete knowledge of their sorted position in relation to all pivots. In 1-2 pivot sort these soft partitions are "gtf2" (greater than the first of 2 pivots, i.e. in either partition 2 or 3), "ltl2" (less than the last of 2 pivots, i.e. in either partition 1 or 2), and "none" (no information on where these elements are in relation to the pivots, i.e. essentially unsorted.) In this way maximum information is retained when pivots are exchanged. Once all elements are sorted and the pivots are set in stone, elements in soft partitions are then placed into hard partitions. 
 
-Despite displacing elements when adding and removing pivots, the algorithm is guaranteed to run in linearithmic time. This is because 1. it is guaranteed that more elements are placed than displaced 2. no partition can be too large because large partitions are split
+Despite displacing elements when adding and removing pivots, the algorithm is guaranteed to run in linearithmic time. This is because 1. it is guaranteed that more elements are placed than displaced 2. no partition can be too large because large partitions are split. Thus, it is like a guaranteed "balanced" quick sort, and has the same run time complexity as quick sort's average.
 
 Partitions are implemented as linked lists, allowing for them to be appended to one another trivially.
 
