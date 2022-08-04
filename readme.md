@@ -12,7 +12,7 @@ Here are the benchmarks on my machine.
 |2^26|189.04|51.950|41.997|
 
 ### OBSERVATIONS
-The benchmarks evidence that 1-2 pivot sort has a significantly lower coefficient for the linearithmic scaling "nlog(n)" term than quicksort, but also a significantly larger overhead coefficient for the linear scaling "n" term than quicksort. The results are not adjusted for cache miss rates or pipelineability or any other processor tricks.
+The benchmarks evidence that 1-2 pivot sort scales much better than quicksort. The results are not adjusted for cache miss rates or pipelineability or any other processor tricks.
 
 ### HOW IT WORKS
 
