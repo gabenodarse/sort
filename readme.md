@@ -1,5 +1,5 @@
 ### PREFACE
-I first discovered this algorithm a few years ago when heavily analyzing the problem of sorting. I recommend reading through this readme before trying to read through the code; the coes uses several linked lists, branching if statements, a few gotos, and 500 lines to actualize an idea which is more elegant. The code is not as difficult to understand once the algorithm is understood.
+I first discovered this algorithm a few years ago when heavily analyzing the problem of sorting. I recommend reading through this readme before trying to read through the code; the code uses several linked lists, branching if statements, a few gotos, and 500 lines to actualize an idea which is more elegant. The code is not as difficult to understand once the algorithm is understood.
 
 ### BENCHMARKS
 Here are the benchmarks on my machine.
