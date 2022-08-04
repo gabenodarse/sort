@@ -16,7 +16,7 @@ The benchmarks evidence that 1-2 pivot sort scales much better than quicksort. T
 
 ### HOW IT WORKS
 
-Let's preface the explanation by saying that quicksort on random values is a very fast algorithm. It only falters because pivots don't always happen to be near the center. Consider that half the time the choice of pivot will either fall below 25% of elements or above 75% of elements, resulting in imbalanced partitions. Choosing a median of 3 or 9 or whatever does not help with this problem (a median of 3 is statistically as likely to result in a bad median if the array is large). What would help would be the medians of medians algorithm used in conjunction with quick sort, but that is a sufficiently complicated algorithm that the overhead would be very high.
+Let's preface the explanation by saying that quicksort on random values is a very fast algorithm. It only falters because pivots don't always happen to be near the center. Consider that half the time the choice of pivot will either fall below 25% of elements or above 75% of elements, resulting in imbalanced partitions. Choosing a median of 3, 9 etc. does not help with this problem (a median of 3 is statistically as likely to result in a bad median if the array is large). What would help would be the medians of medians algorithm used in conjunction with quick sort, but that is a sufficiently complicated algorithm that the overhead would be very high.
 
 1-2 pivot sort at its core is quick sort. 
 
